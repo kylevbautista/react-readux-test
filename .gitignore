@@ -39,4 +39,4 @@ build
 db.json
 
 # snapshots folder
-./src/components/__snapshots__/
+__snapshots__/
