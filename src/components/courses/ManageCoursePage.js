@@ -14,7 +14,7 @@ export const history = createBrowserHistory({ forceRefresh: true });
 import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
 
-function ManageCoursePage({ ...props }) {
+export function ManageCoursePage({ ...props }) {
   const [course, setCourse] = useState({ ...props.course });
   const [errors, setErrors] = useState({});
   const [saving, setSaving] = useState(false);
