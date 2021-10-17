@@ -9,12 +9,13 @@ import { loadAuthors } from "../../redux/actions/authorActions";
 import PropTypes from "prop-types";
 import CourseForm from "./CourseForm";
 import { newCourse } from "../../../tools/mockData";
-import { createBrowserHistory } from "history";
+/*import { createBrowserHistory } from "history";
 export const history = createBrowserHistory({ forceRefresh: true });
+*/
 import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
 
-export function ManageCoursePage({ ...props }) {
+export function ManageCoursePage({ history, ...props }) {
   const [course, setCourse] = useState({ ...props.course });
   const [errors, setErrors] = useState({});
   const [saving, setSaving] = useState(false);
