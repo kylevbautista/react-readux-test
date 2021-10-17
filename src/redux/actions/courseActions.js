@@ -14,6 +14,7 @@ export function loadCoursesSuccess(courses) {
 }
 
 export function updateCourseSuccess(savedCourse) {
+  //return { type: types.UPDATE_COURSE_SUCCESS, course: savedCourse };
   return { type: types.SAVE_COURSE_SUCCESS, course: savedCourse };
 }
 
